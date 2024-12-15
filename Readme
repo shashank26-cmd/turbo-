@@ -1,0 +1,44 @@
+# Travel Backend
+
+This repository contains the backend for the Travel application. The frontend is in a separate repository named `travel_frontend`.
+
+## Prerequisites
+
+- Node.js (v16 or higher)
+- MongoDB
+- `travel_frontend` repository setup and running
+
+## Setup Instructions
+
+1. **Clone the repository**  
+   ```bash
+   git clone <your-backend-repo-url>
+   cd <your-backend-repo-folder>
+   ```
+
+2. **Install dependencies**  
+   ```bash
+   npm install
+   ```
+
+3. **Configure Environment Variables**  
+   Create a `.env` file in the root directory and add the following:  
+   ```env
+   MONGO_URL=<your-mongodb-connection-string>
+   PORT=<your-port-number>
+   ```
+
+4. **Run the Backend**  
+   ```bash
+   npm start
+   ```
+
+5. **Access the Application**  
+   - Backend: Runs at `http://localhost:<PORT>`  
+   - Frontend: Refer to the `travel_frontend` repository for setup.
+
+## Notes
+
+- Ensure MongoDB is running before starting the backend.
+- For production, update the environment variables accordingly.
+
