@@ -78,6 +78,73 @@ Fetches booking details by ID.
 Delete Booking: DELETE /api/bookings/:id
 
 Deletes a booking by ID.
+
+{
+			"name": "admin page",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				},
+				"description": "[http://localhost:5001/admin](http://localhost:5001/login)"
+			},
+			"response": []
+		},
+		{
+			"name": "admin-login",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "password123",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5001/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
+
+
+
+
+
+
 Technologies Used
 Backend
 Node.js: Backend runtime.
