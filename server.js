@@ -20,6 +20,10 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+app.use("/",(req,res)=>{
+    res.send("pong")
+})
+
 // Routes
 app.use('/api/packages', packageRoutes); // Routes for package-related API
 app.use('/api/bookings', bookingRoutes); // Routes for booking-related API
